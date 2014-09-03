@@ -1,0 +1,29 @@
+#featuredGrids
+{
+	position: absolute;
+	width: 95%;
+	margin-top:50px;
+	margin-bottom: 25px;
+	margin-left: 100px;
+	margin-right: 100px;
+	color: #E36108 ;
+	font-family: Arial;
+}
+
+#featuredListing
+{
+	position: relative;
+	margin-bottom: 25px;
+	width: 95%;
+	height: 200px;
+	background-color:#F3F3F3;
+}
+
+#featuredArtist
+{
+	position: relative;
+	margin-bottom: 25px;
+	width: 95%;
+	height: 200px;
+	background-color:#F3F3F3;
+}

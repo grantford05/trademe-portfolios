@@ -1,0 +1,97 @@
+body
+{
+	margin-top: 50px;
+	margin:0;
+	padding:0;
+}
+
+#topNav
+{
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	height:50px;
+	border: 1px solid #E19B17 ;
+	background: #fff1b9; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fff1b9 0%, #ffcd08 91%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff1b9), color-stop(91%,#ffcd08)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fff1b9 0%,#ffcd08 91%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fff1b9 0%,#ffcd08 91%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fff1b9 0%,#ffcd08 91%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fff1b9 0%,#ffcd08 91%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff1b9', endColorstr='#ffcd08',GradientType=0 ); /* IE6-9 */
+}
+
+#navLogo
+{
+	float:left;
+	margin-top: 15px;
+	margin-left:30px;
+	width: 1px;
+	color: #0066D3;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#navLogo a
+{
+	color:#0066D3;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+#searchBar
+{
+	margin-left: 10%;
+}
+
+#searchInput
+{
+	width: 50%;
+	height: 25px;
+	margin-left: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	background-color: white;
+	font-family: Arial;
+	color: #808080;
+	font-weight: bold;
+}
+
+#searchButton
+{
+	color: white;
+	background-color: #C17228;
+	height: 30px;
+	width: 80px;
+	border: none;
+}
+
+#navOptions
+{
+	width: 20%;
+	float: right;
+}
+
+#mainNav
+{
+	float: right;
+}
+
+#mainNav li
+{
+	margin-top: 0px;
+	list-style-type: none;
+	display: inline;
+	padding-right: 40px;
+}
+
+#mainNav a
+{
+	color:#0066D3;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+}

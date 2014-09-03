@@ -1,0 +1,55 @@
+#container
+{
+	position: absolute;
+	width: 90%;
+	margin-top:100px;
+	margin-bottom: 25px;
+	margin-left: 100px;
+	margin-right: 100px;
+	color: #E36108 ;
+	font-family: Arial;
+	max-height: inherit;
+	background-color:#F3F3F3;
+}
+
+#searchContainers
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	font-family: Arial;
+}
+
+#searchContainers:hover
+{
+	background-color: #dedede;
+	border-radius: 10px;
+}
+
+#searchResult
+{
+	position: relative;
+	width: 25%;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: black;
+	border-collapse: collapse;
+	background-color:none;
+}
+
+#searchTable
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px 0px;
+}
+
+#emptySearch
+{
+	position: relative;
+	text-align: center;
+	font-size: 200%;
+	height: 400px;
+}

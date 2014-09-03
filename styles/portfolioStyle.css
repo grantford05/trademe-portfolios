@@ -1,0 +1,89 @@
+#portfolioContainer
+{
+	margin-top: 100px;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 10px solid black;
+	min-height: 750px;
+	width: 60%;
+	position: absolute;
+	background-color:#F3F3F3;
+	margin-bottom: 20px;
+}
+
+#topInfo
+{
+	position: relative;
+	margin-top:10px;
+	width: 100%;
+	height: 50px;
+	color: black;
+	font-size: 200%;
+	text-align: center;
+	color: #E36108;
+	text-decoration: underline;
+}
+
+#artistInfo
+{
+	margin-left: 30px;
+	font-size: 100%;
+}
+
+#userImage
+{
+	float; left;
+	margin-top: 25px;
+	border: 2px solid black;
+}
+
+#userInfo
+{
+	padding-left: 20%;
+	margin-top:-130px;
+
+	width: 40%;
+}
+
+#artistWork
+{
+	border-top: 1px solid black;
+	float: center;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 120px;
+}
+
+#portoflioContainers
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	font-family: Arial;
+}
+
+#portoflioContainers:hover
+{
+	background-color: #dedede;
+	border-radius: 10px;
+}
+
+#portfolioResult
+{
+	position: relative;
+	width: 25%;
+	margin-left: 10%;
+	margin-right: 10%;
+	color: black;
+	border-collapse: collapse;
+	background-color:none;
+}
+
+#portfolioTable
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px 0px;
+}

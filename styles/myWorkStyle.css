@@ -1,0 +1,18 @@
+#newPrice
+{
+	padding-left:10px;
+	width:160px;
+}
+
+#inputBox
+{
+	width: 45%;
+	height: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	font-family: Arial;
+	color: #808080;
+	font-weight: bold;
+	border-radius:6px;
+}

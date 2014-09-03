@@ -1,0 +1,70 @@
+#container
+{
+	position: absolute;
+	width: 88%;
+	margin-top:100px;
+	margin-bottom: 25px;
+	margin-left: 100px;
+	margin-right: 180px;
+	color: #E36108 ;
+	font-family: Arial;
+	height: 80%;
+	background-color:#F3F3F3;
+	font-family: Arial;
+	min-height: 65%;
+}
+
+#container a:link
+{
+	color:#0066D3;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+#container a:visited
+{
+	color:#0066D3;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+#container a:hover
+{
+	text-decoration: underline;
+}
+
+#leftContent
+{
+	position: relative;
+	float: left;
+	margin-left: 70px;
+	margin-top: 50px;
+	width: 40%;
+	height: 80%;
+	border-right: 1px solid gray;
+}
+
+#rightContent
+{
+	position:relative;
+	float: right;
+	margin-right: 70px;
+	margin-top: 50px;
+	height: auto;
+	width: 40%;
+	border-style: hidden;
+}
+
+#singleContent
+{
+	margin-top: 50px;
+	margin-left: 35%;
+	margin-right: 20%;
+	width: 50%;
+}
+
+#blackText
+{
+	font-color: black;
+}
+

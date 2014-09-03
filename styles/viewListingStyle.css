@@ -1,0 +1,52 @@
+#listingContainer
+{
+	margin-top: 100px;
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 10px solid black;
+	min-height: 750px;
+	width: 60%;
+	position: absolute;
+	background-color:#F3F3F3;
+	margin-bottom: 20px;
+}
+
+#topInfo
+{
+	position: relative;
+	margin-top:10px;
+	width: 100%;
+	height: 50px;
+	color: black;
+	font-size: 200%;
+	text-align: center;
+	color: #E36108;
+	text-decoration: underline;
+}
+
+#listingInfo
+{
+	margin-left: 10%;
+	font-size: 20px;
+}
+
+#listingImage
+{
+	float: right;
+	margin-top: 25px;
+	margin-right: 10%;
+	margin-left: 5%;
+}
+
+#listingComments
+{
+	clear: both;
+	margin-left: 10%;
+	font-size: 20px;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
