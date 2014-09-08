@@ -91,6 +91,16 @@
 	border-radius:6px;
 }
 
+#smallDropDown
+{
+	height: 25px;
+	background-color: white;
+	font-family: Arial;
+	color: #808080;
+	font-weight: bold;
+	border-radius:6px;
+}
+
 #smallTextAreas
 {
 	width: 50%;
@@ -105,4 +115,10 @@
 	font-family: Arial;
 	color: #808080;
 	border-radius:6px;
+}
+
+#browseButton
+{
+	margin-right: 15%;
+	margin-bottom: 20px;
 }

@@ -1,4 +1,4 @@
-<?php
+ <?php
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -105,9 +105,10 @@ if(isset($_SESSION['userName']))
 				$category = mysql_real_escape_string(strip_tags($_POST['category']));
 				$price = mysql_real_escape_string(strip_tags($_POST['price']));
 				$listingInfo = mysql_real_escape_string(strip_tags($_POST['listingInfo']));
+				$image = mysql_real_escape_string(strip_tags($target));
 
-				$insertQuery="INSERT INTO tblListing (userID, listingName, category, price, listingInfo)
-					VALUES('$userID', '$listingName', '$category', '$price', '$listingInfo')";
+				$insertQuery="INSERT INTO tblListing (userID, listingName, category, price, listingInfo, listingImage)
+					VALUES('$userID', '$listingName', '$category', '$price', '$listingInfo', '$image')";
 				$result = mysql_query($insertQuery);
 
 

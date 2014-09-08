@@ -27,7 +27,7 @@
 
 	$listingID = $_GET['listingID'];
 
-	$getUserDetails = "SELECT listingName, category, price, listingInfo, comments, userName FROM tblListing 
+	$getUserDetails = "SELECT listingName, category, listingImage, price, listingInfo, comments, userName FROM tblListing 
 	JOIN tblUser ON (tblListing.userID = tblUser.userID) WHERE tblListing.listingID = '$listingID'";
 	$user = mysql_query($getUserDetails);
 
@@ -35,10 +35,11 @@
 	{
 		$listingName = $row[0];
 		$category = $row[1];
-		$price = $row[2];		
-		$listingInfo = $row[3];
-		$comments = $row[4];
-		$userName = $row[5];
+		$image = $row[2];
+		$price = $row[3];		
+		$listingInfo = $row[4];
+		$comments = $row[5];
+		$userName = $row[6];
 	}
 
 	echo("<div id = 'listingContainer'>
@@ -51,7 +52,7 @@
 
 		<div id = 'listingInfo'>
 			<br><br>
-			<img src='../images/art.jpg' height='225px' width='250px' alt='listingImage' id='listingImage'>
+			<img src='$image' height='225px' width='250px' alt='listingImage' id='listingImage'>
 
 			<p><b>Price:</b> $$price <br>
 			<b>Category:</b> $category <br>

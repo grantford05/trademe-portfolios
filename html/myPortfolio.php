@@ -11,6 +11,7 @@
 		<link rel = "stylesheet" href="../styles/portfolioStyle.css"/>
 		<link rel = "stylesheet" href="../styles/searchStyle.css"/>
 		<link rel = "stylesheet" href="../styles/mainStyle.css"/>
+		<link rel = "stylesheet" href="../styles/buttons.css"/>
 
 	</head>
 
@@ -36,7 +37,7 @@ if(isset($_SESSION['userName']))
 				$username = $row[1];
 				$firstName = $row[2];
 				$lastName = $row[3];
-				$image = $row[4];
+				$userImage = $row[4];
 				$email = $row[5];
 				$bio = $row[7];
 				$userAddress = $row[8];
@@ -53,17 +54,18 @@ if(isset($_SESSION['userName']))
 
 				<div id = 'artistInfo'>
 
-					<img src='../images/user.jpg' height='125px' width='150px' alt='userImage' id='userImage'>
+					<img src='$userImage' height='125px' width='150px' alt='userImage' id='userImage'>
 					<div id = 'userInfo'>
-					<b>$firstName $lastName</b> <br><br>
-					$bio <br>
+					<br>$firstName $lastName</b> <br><br>
+					</div>
+					<div id = 'userBio'>$bio<br>
 					</div>
 
 				</div>
 
 				<div id = 'artistWork'>");
 
-					$selectString = "SELECT listingImage, listingName, category, listingInfo FROM tblListing WHERE userID = '$userID'";
+					$selectString = "SELECT listingImage, listingName, category, listingID FROM tblListing WHERE userID = '$userID'";
 					$result = mysql_query($selectString);
 
 					echo("<table id = 'portfolioTable'>");
@@ -74,11 +76,15 @@ if(isset($_SESSION['userName']))
 							{
 								if ($field == 'listingImage')
 								{
-									echo("<td><img src='../images/art.jpg' height='125px' width='150px' alt='userImage' id='userImage'></td>");
+									echo("<td><img src='$value' height='125px' width='150px' alt='listingImage' id='artImage'></td>");
+								}
+								elseif($field == 'listingID')
+								{
+									echo("<td id = 'searchResult'><a href='viewListing.php?listingID=$value'>Click to view listing</a></td>");
 								}
 								else
 								{
-									echo("<td id = 'portfolioResult'>$value</td>");
+									echo("<td id = 'searchResult'>$value</td>");
 								}
 							}
 							echo("</tr>");

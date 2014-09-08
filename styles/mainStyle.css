@@ -14,21 +14,21 @@
 	min-height: 65%;
 }
 
-#container a:link
+a:link
 {
 	color:#0066D3;
 	text-decoration: none;
 	font-family: Arial;
 }
 
-#container a:visited
+a:visited
 {
 	color:#0066D3;
 	text-decoration: none;
 	font-family: Arial;
 }
 
-#container a:hover
+a:hover
 {
 	text-decoration: underline;
 }
@@ -63,8 +63,32 @@
 	width: 50%;
 }
 
-#blackText
+#browse
 {
 	font-color: black;
+	margin-top: 50px;
+	margin-left: 10%;
+	width: 75%;
+	text-align: center;
 }
 
+#browseBorder
+{
+	border-bottom: 1px solid gray;
+}
+
+#browseContainer
+{
+	position: absolute;
+	width: 88%;
+	margin-top:100px;
+	margin-bottom: 25px;
+	margin-left: 100px;
+	margin-right: 180px;
+	color: #E36108 ;
+	font-family: Arial;
+	height: auto;
+	background-color:#F3F3F3;
+	font-family: Arial;
+	min-height: 65%;
+}

@@ -35,6 +35,7 @@ if(isset($_SESSION['userName']))
 
 			<a href='editAccount.php'>Edit My Details</a><br><br>
 			Change My Password <br><br>
+			<a href='profilePicture.php'>Add Profile Picture</a><br><br>
 			<a href='logout.php'>Logout</a> 
 
 		</div>
@@ -52,7 +53,7 @@ if(isset($_SESSION['userName']))
 				$username = $row[1];
 				$firstName = $row[2];
 				$lastName = $row[3];
-				$image = $row[4];
+				$userImage = $row[4];
 				$email = $row[5];
 				$bio = $row[7];
 				$userAddress = $row[8];

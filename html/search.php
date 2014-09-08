@@ -46,7 +46,7 @@ if(!empty($searchValue))
 					{
 						if ($field == 'listingImage')
 						{
-							echo("<td><img src='../images/art.jpg' height='125px' width='150px' alt='userImage' id='userImage'></td>");
+							echo("<td><img src='$value' height='125px' width='150px' alt='listingImage' id='userImage'></td>");
 						}
 						elseif($field == 'listingID')
 						{

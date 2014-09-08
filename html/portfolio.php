@@ -11,7 +11,7 @@
 		<link rel = "stylesheet" href="../styles/portfolioStyle.css"/>
 		<link rel = "stylesheet" href="../styles/searchStyle.css"/>
 		<link rel = "stylesheet" href="../styles/mainStyle.css"/>
-
+		<link rel = "stylesheet" href="../styles/buttons.css"/>
 	</head>
 
 	<body>
@@ -22,12 +22,11 @@
 ?>
 
 <?php
-echo("<br><br>");
 if(isset($_GET['userName']))
 {
 		$userName = $_GET['userName'];
 
-		$getUserDetails = "SELECT userName, firstName, lastName, bio FROM tblUser WHERE tblUser.userName = '$userName'";
+		$getUserDetails = "SELECT userName, firstName, lastName, userImage, bio FROM tblUser WHERE tblUser.userName = '$userName'";
 		$user = mysql_query($getUserDetails);
 
 		while($row = mysql_fetch_array($user))
@@ -35,34 +34,43 @@ if(isset($_GET['userName']))
 			$username = $row[0];
 			$firstName = $row[1];
 			$lastName = $row[2];
-			$bio = $row[3];
+			$userImage = $row[3];
+			$bio = $row[4];
 		}
 
 		echo("<div id = 'portfolioContainer'>
-			<div id = 'topInfo'>
-				$username's Portfolio
-			</div>
-			<div id = 'artistInfo'>
-				<img src='../images/user.jpg' height='125px' width='150px' alt='userImage' id='userImage'>
-				<div id = 'userInfo'>
-				<b>$firstName $lastName</b> <br><br>
-				$bio <br>
-				</div>
-			</div>
-			<div id = 'artistWork'>");
 
-				$selectString = "SELECT listingImage, listingName, category, listingInfo, listingID FROM tblListing JOIN tblUser ON (tblListing.userID = tblUser.userID) WHERE tblUser.userName = '$username'";
+				<div id = 'topInfo'>
+
+					$username's Portfolio
+
+				</div>
+
+				<div id = 'artistInfo'>
+
+					<img src='$userImage' height='125px' width='150px' alt='userImage' id='userImage'>
+					<div id = 'userInfo'>
+					<br>$firstName $lastName</b> <br><br>
+					</div>
+					<div id = 'userBio'>$bio<br>
+					</div>
+
+				</div>
+
+				<div id = 'artistWork'>");
+
+				$selectString = "SELECT listingImage, listingName, category, listingImage, listingID FROM tblListing JOIN tblUser ON (tblListing.userID = tblUser.userID) WHERE tblUser.userName = '$username'";
 				$result = mysql_query($selectString);
 
 				echo("<table id = 'portfolioTable'>");
 					while ($row = mysql_fetch_assoc($result))
 					{
 						echo("<tr id = 'portoflioContainers'>");
-						foreach($row as $field => $value)
-						{
+							foreach($row as $field => $value)
+							{
 								if ($field == 'listingImage')
 								{
-									echo("<td><img src='../images/art.jpg' height='125px' width='150px' alt='userImage' id='userImage'></td>");
+									echo("<td><img src='$value' height='125px' width='150px' alt='listingImage' id='artImage'></td>");
 								}
 								elseif($field == 'listingID')
 								{
@@ -70,11 +78,10 @@ if(isset($_GET['userName']))
 								}
 								else
 								{
-									echo("<td id = 'portfolioResult'>$value</td>");
+									echo("<td id = 'searchResult'>$value</td>");
 								}
-							
-						}
-						echo("</tr>");
+							}
+							echo("</tr>");
 					}
 				echo("</table>");
 			
@@ -84,10 +91,6 @@ if(isset($_GET['userName']))
 		echo("</div>
 
 	</div>");
-}
-else
-{
-	echo("<br><br><br> broken");
 }
 
 ?>
