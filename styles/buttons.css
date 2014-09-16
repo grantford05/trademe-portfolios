@@ -62,6 +62,7 @@
 	color: #808080;
 	font-weight: bold;
 	border-radius:6px;
+	padding-left: 5px;
 }
 
 #inputTextArea
@@ -76,6 +77,7 @@
 	font-family: Arial;
 	color: #808080;
 	border-radius:6px;
+	padding-left: 5px;
 }
 
 #inputDropDown
@@ -115,6 +117,7 @@
 	font-family: Arial;
 	color: #808080;
 	border-radius:6px;
+	padding-left: 5px;
 }
 
 #browseButton
