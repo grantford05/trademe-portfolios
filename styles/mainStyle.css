@@ -67,8 +67,7 @@ a:hover
 {
 	font-color: black;
 	margin-top: 50px;
-	margin-left: 10%;
-	width: 75%;
+	width: 100%;
 	text-align: center;
 }
 
@@ -85,10 +84,9 @@ a:hover
 	margin-bottom: 25px;
 	margin-left: 100px;
 	margin-right: 180px;
-	color: #E36108 ;
+	color: #E36108;
 	font-family: Arial;
 	height: auto;
 	background-color:#F3F3F3;
 	font-family: Arial;
-	min-height: 65%;
 }

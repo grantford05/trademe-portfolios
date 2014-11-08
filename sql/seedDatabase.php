@@ -31,7 +31,7 @@
 		password		VARCHAR(50) NOT NULL,
 		bio 			VARCHAR(150) NOT NULL,
 		userAddress		VARCHAR(50) NOT NULL,
-		phone			INT(12)		NOT NULL,
+		phone			VARCHAR(12)		NOT NULL,
 		
 		PRIMARY KEY(userID)
 	)";
@@ -89,7 +89,7 @@
 		listingName		VARCHAR(50)		NOT NULL,
 		category 		VARCHAR(50)		NOT NULL,
 		listingImage	VARCHAR(50)	 	NOT NULL,
-		price			INT(12) 		NOT NULL,
+		price			VARCHAR(20) 		NOT NULL,
 		listingInfo		VARCHAR(100) 	NOT NULL,
 		comments		VARCHAR(50)	 	NOT NULL,
 		/* IMPORTANT replace date fields*/

@@ -25,8 +25,8 @@ body
 #navLogo
 {
 	float:left;
-	margin-top: 15px;
-	margin-left:30px;
+	margin-top: 10px;
+	margin-left:15px;
 	width: 1px;
 	color: #0066D3;
 	font-family: Arial;
@@ -58,6 +58,7 @@ body
 	font-family: Arial;
 	color: #808080;
 	font-weight: bold;
+	padding-left: 5px;
 }
 
 #searchButton

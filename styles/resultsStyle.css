@@ -12,7 +12,7 @@
 	background-color:#F3F3F3;
 }
 
-#searchContainers
+.searchContainers
 {
 	position: relative;
 	width: 100%;
@@ -21,13 +21,19 @@
 	background-color: #F3F3F3;
 }
 
-#searchContainers:hover
+.searchContainers:hover
 {
 	background-color: #dedede;
 	border-radius: 10px;
 }
 
-#searchResult
+.searchHeaders
+{
+	font-weight: bold;
+	border-bottom: 1px solid gray;
+}
+
+.searchResult
 {
 	position: relative;
 	width: 25%;
@@ -38,13 +44,15 @@
 	background-color:none;
 }
 
-#searchTable
+.searchTable
 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	min-width: 100%;
+	width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0px 0px;
+	text-align: center;
 }
 
 #emptySearch
@@ -53,4 +61,23 @@
 	text-align: center;
 	font-size: 200%;
 	height: 400px;
+}
+
+a:link
+{
+	color:#0066D3;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+a:visited
+{
+	color:#0066D3;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+a:hover
+{
+	text-decoration: underline;
 }
